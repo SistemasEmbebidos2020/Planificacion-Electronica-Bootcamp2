@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Electrónica y ESP32</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-roboto bg-gray-50 text-gray-800 antialiased">
+    <div class="min-h-screen bg-gray-50">
+      <header class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-4 shadow-md">
+        <div class="container mx-auto">
+          <h1 class="text-3xl font-bold">Bootcamp de Electrónica y Programación ESP32</h1>
+          <p class="text-lg">Para jóvenes exploradores (11-14 años)</p>
+        </div>
+      </header>
+
+      <main class="container mx-auto py-8 px-4">
+        <section>
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Plan de Estudio del Bootcamp</h2>
+            <p class="text-lg text-gray-600">
+              Un mes de aprendizaje práctico, 4 días a la semana, 3 horas al día, optimizando el tiempo para una inmersión completa.
+            </p>
+          </div>
+
+          <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold text-indigo-700 mb-4">
+                Semana 1: Fundamentos de la Electrónica Analógica y Primeros Pasos con ESP32
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 1: Introducción a la Electricidad y Componentes Básicos (Analógica)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es la electricidad? (Corriente, Voltaje, Resistencia - conceptos básicos, sin fórmulas complejas).</li>
+                    <li>Circuitos Abiertos y Cerrados.</li>
+                    <li>Componentes básicos: Protoboard, cables (jumpers), LEDs, resistencias.</li>
+                    <li>Práctica: Encender un LED con una resistencia en una protoboard.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 2: Circuitos en Serie y Paralelo (Analógica)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Concepto de conexión en serie y en paralelo.</li>
+                    <li>Práctica: Conectar varios LEDs en serie y en paralelo. Observar diferencias de brillo.</li>
+                    <li>Introducción a los Pull-up y Pull-down: ¿Por qué son útiles? Concepto básico.</li>
+                    <li>Práctica: Simulación de pull-up/pull-down con un botón (explicación de la necesidad para microcontroladores).</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 3: Introducción al ESP32 y Entorno Easycoding (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es un microcontrolador? ¿Qué es el ESP32?</li>
+                    <li>Instalación de Easycoding (o plataforma similar, se asume que está lista).</li>
+                    <li>Identificación de pines básicos en el ESP32.</li>
+                    <li>Primer programa: "Hola Mundo" con LED (parpadeo básico).</li>
+                    <li>Práctica: Parpadear un LED integrado y un LED externo con Easycoding.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 4: Pulsadores y Entradas Digitales (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es una entrada digital?</li>
+                    <li>Conexión de un pulsador al ESP32 (usando los conceptos de pull-up/pull-down vistos).</li>
+                    <li>Programación: Controlar un LED con un pulsador (presionar para encender/apagar).</li>
+                    <li>Práctica: Construir y programar el circuito del pulsador y LED.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold text-indigo-700 mb-4">
+                Semana 2: Sensores Simples y Actuadores
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 1: Sensor NTC (Analógico/Digital - lecturas)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es un sensor? ¿Cómo el ESP32 "lee" el mundo?</li>
+                    <li>Concepto de resistencia que cambia con la temperatura (NTC).</li>
+                    <li>Conexión del NTC al ESP32 (pin analógico).</li>
+                    <li>Programación: Leer el valor del NTC y mostrarlo en el monitor serial (Easycoding).</li>
+                    <li>Práctica: Armar el circuito NTC y ver las lecturas.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 2: Zumbador (Buzzer) y Salidas Digitales (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es un zumbador? ¿Cómo hacer sonidos?</li>
+                    <li>Conexión del zumbador al ESP32.</li>
+                    <li>Programación: Hacer que el zumbador suene cuando se presiona un botón o si la temperatura del NTC supera un umbral.</li>
+                    <li>Práctica: Integrar NTC, botón y zumbador.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 3: LED RGB y Control de Color (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Cómo funciona un LED RGB? (Rojo, Verde, Azul).</li>
+                    <li>Concepto básico de PWM (Pulse Width Modulation) para controlar el brillo/color (sin profundizar).</li>
+                    <li>Conexión del LED RGB al ESP32.</li>
+                    <li>Programación: Cambiar colores del LED RGB con botones o secuencias.</li>
+                    <li>Práctica: Controlar un LED RGB.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 4: Potenciómetros y Control Analógico (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es un potenciómetro? (Resistencia variable).</li>
+                    <li>Conexión del potenciómetro al ESP32 (pin analógico).</li>
+                    <li>Programación: Usar el potenciómetro para controlar el brillo de un LED o la velocidad de parpadeo.</li>
+                    <li>Práctica: Controlar brillo de un LED con potenciómetro.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold text-indigo-700 mb-4">
+                Semana 3: Comunicación Serial y Displays
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 1: Pantalla LCD con I2C (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es una pantalla LCD? ¿Qué es I2C? (Concepto de comunicación con menos cables).</li>
+                    <li>Conexión de la pantalla LCD I2C al ESP32.</li>
+                    <li>Programación: Mostrar mensajes personalizados en la pantalla LCD.</li>
+                    <li>Práctica: Mostrar lecturas del NTC o estado del botón en la LCD.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 2: Sensor DHT11 (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es el sensor DHT11? (Temperatura y Humedad).</li>
+                    <li>Conexión del DHT11 al ESP32 (un solo pin para datos).</li>
+                    <li>Programación: Leer temperatura y humedad, mostrar en monitor serial y LCD.</li>
+                    <li>Práctica: Medir el ambiente con DHT11.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 3: Combinando Sensores y Actuadores (Programación)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Proyecto Integrador Básico: Usar NTC/DHT11 para encender LEDs RGB a diferentes colores según la temperatura, y un zumbador si hace mucho calor/frío.</li>
+                    <li>Práctica: Diseño y programación de un "Monitor Ambiental Simple".</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 4: Introducción a la Conectividad Wi-Fi (Concepto)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>¿Qué es Wi-Fi? ¿Cómo el ESP32 puede conectarse a Internet? (Concepto básico, sin programación Wi-Fi compleja todavía).</li>
+                    <li>Discusión sobre el proyecto final: Controlar LEDs desde el móvil.</li>
+                    <li>Preparación para App Inventor.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold text-indigo-700 mb-4">
+                Semana 4: Proyecto Final - App Móvil y Control Inalámbrico
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 1: Conceptos de App Inventor y Diseño de UI (App Móvil)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Introducción a App Inventor: Entorno visual, arrastrar y soltar.</li>
+                    <li>Diseño de una interfaz simple: Botones para LEDs, un control deslizante para RGB.</li>
+                    <li>Práctica: Diseñar la interfaz básica en App Inventor.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 2: Comunicación entre App Inventor y ESP32 (Bluetooth/Wi-Fi)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Explicación de cómo el ESP32 puede recibir comandos de la app (conceptos de Bluetooth/Wi-Fi, asumiendo un módulo sencillo de comunicación en Easycoding).</li>
+                    <li>Programación en App Inventor: Bloques para enviar comandos.</li>
+                    <li>Programación en Easycoding: Bloques para recibir comandos y controlar LEDs RGB.</li>
+                    <li>Práctica: Establecer la comunicación básica.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 3: Control de LEDs RGB desde la App Móvil (Proyecto Final)
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Integración completa: App Inventor envía comandos para encender/apagar LEDs, cambiar colores RGB.</li>
+                    <li>Programación en Easycoding: Manejar los comandos recibidos para controlar el LED RGB.</li>
+                    <li>Práctica: Prueba y depuración del sistema completo.</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                  <h4 class="text-lg font-semibold text-indigo-600 mb-3">
+                    Día 4: Presentación de Proyectos y Celebración
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Cada niño presenta su "Monitor Ambiental" y la aplicación móvil funcionando.</li>
+                    <li>Revisión de conceptos aprendidos.</li>
+                    <li>Actividad de cierre y celebración.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-12">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Lista de Componentes Necesarios
+            </h2>
+            <p class="text-lg text-gray-600">
+              Todo lo que los jóvenes ingenieros necesitarán para su aventura electrónica.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+                Placas y Conectividad
+              </h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>ESP32 DevKit C (o similar) x 1 por niño</li>
+                <li>Protoboard (400 o 830 puntos) x 1 por niño</li>
+                <li>Cables Jumper Macho-Macho, Macho-Hembra (kit de varios tamaños y colores)</li>
+                <li>Cable USB-C (o Micro-USB, según el ESP32) para programación y alimentación</li>
+              </ul>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+                Resistencias (Kit variado es ideal)
+              </h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>Resistencias de 220 Ohm (para LEDs)</li>
+                <li>Resistencias de 10k Ohm (para pull-ups/pull-downs)</li>
+              </ul>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+                Actuadores
+              </h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>LEDs Rojos, Verdes, Azules (varios de cada color)</li>
+                <li>LED RGB Cátodo Común x 1 por niño</li>
+                <li>Buzzer Activo (5V) x 1 por niño</li>
+              </ul>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+                Sensores e Interruptores
+              </h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>Pulsadores (botón táctil 4 pines) x 2-3 por niño</li>
+                <li>Sensor NTC (Termistor) x 1 por niño</li>
+                <li>Potenciómetros (10k Ohm) x 1-2 por niño</li>
+                <li>Sensor de Temperatura y Humedad DHT11 x 1 por niño</li>
+              </ul>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+                Pantalla
+              </h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>Módulo LCD 16x2 con Interfaz I2C x 1 por niño</li>
+              </ul>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+                Herramientas y Accesorios (compartidos o por niño)
+              </h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>Computadoras con acceso a internet y el entorno Easycoding preinstalado.</li>
+                <li>Dispositivos Android (teléfonos/tabletas) para probar App Inventor.</li>
+                <li>Fuente de alimentación de 5V (USB charger o power bank) si se necesita alimentar proyectos sin la PC.</li>
+                <li>Cajas pequeñas o bases para montar proyectos finales (opcional).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="w-full bg-gray-800 text-white p-4 text-center mt-12">
+        <p class="text-base">
+          © 2024 Bootcamp de Electrónica y Programación. Todos los derechos reservados.
+        </p>
+      </footer>
+    </div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
